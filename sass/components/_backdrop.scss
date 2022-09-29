@@ -1,0 +1,55 @@
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: auto;
+
+  animation: close-modal 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  animation: open-modal 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* animation: open-modal 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
+  /* animation: close-modal 2500ms cubic-bezier(0.4, 0, 0.2, 1) reverse; */
+
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+
+  /* transition: opacity 2500ms ease, visibility 2500ms ease; */
+}
+
+@keyframes open-modal {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes close-modal {
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  0% {
+    transform: scale(0.2);
+  }
+}

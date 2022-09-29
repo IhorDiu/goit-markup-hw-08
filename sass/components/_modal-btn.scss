@@ -1,0 +1,41 @@
+.modal-btn__close {
+  @include abs-position (8px, 8px, auto, auto);
+  display: flex;
+  justify-content: center;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  box-shadow: none;
+  transition: fill var(--transition-dur-and-func);
+
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+    outline-color: var(--accent-color);
+    background-color: transparent;
+  }
+}
+
+.modal-close__icon {
+  width: 18px;
+  height: 18px;
+}
+
+
+.modal-btn__submit {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 52px;
+  color: var(--color-active-portfolio-btn);
+  border-color: transparent;
+
+  &:focus,
+  &:hover {
+    outline-color: var(--accent-color);
+  }
+}
