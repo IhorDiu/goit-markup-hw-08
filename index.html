@@ -25,11 +25,10 @@
     <header class="page-header">
       <div class="container page-header__container">
         <nav class="page-navigation">
-          <!-- Link to the main page -->
           <a class="logo logo__header link" href="./index.html" lang="en"
             >Web<span class="logo__studio_dark">Studio</span></a
           >
-          <!--Menu Nav-->
+
           <ul class="menu list">
             <li class="menu__item">
               <a class="menu__link link menu__link_current" href="./index.html"
@@ -44,9 +43,8 @@
             </li>
           </ul>
         </nav>
-        <!-- Contacts -->
+
         <ul class="page-header__contacts list">
-          <!-- Link to email address -->
           <li class="mail page-header__mail link">
             <a
               class="mail__link page-header__link link"
@@ -60,10 +58,10 @@
               info@devstudio.com
             </a>
           </li>
-          <!-- Link to phone number -->
+
           <li class="phone page-header__phone">
             <a
-              class="phone-link page-header__link link"
+              class="phone__link page-header__link link"
               href="tel:+380961111111">
               <svg
                 lang="en"
@@ -75,18 +73,39 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="open-mobile-menu-btn js-open-menu">
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/svg/icon.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn button js-close-menu" js-close-menu>
+          <svg class="mobile-menu__close-icon">
+            <use href="./images/svg/icon.svg#icon-close-menu"></use>
+          </svg>
+        </button>
+          <ul class="mobile-menu__list list">
+            <li><a class="mobile-menu__link link mobile-menu__link_current" href="./index.html"
+                >Студія</a
+              ></li>
+            <li><a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="mobile-menu__link link" href="#">Контакти</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--MAIN-->
     <main>
       <!-- Hero -->
-      <section class="hero-section section">
+      <!-- <section class="hero-section section">
         <div class="container">
-          <!--Header name-->
+         
           <h1 class="hero-section__name">
             Ефективні рішення для вашого бізнесу
           </h1>
-          <!--Service order button-->
+          
           <button
             class="hero-section__button button"
             type="button"
@@ -94,9 +113,9 @@
             Замовити послугу
           </button>
         </div>
-      </section>
+      </section> -->
       <!--Features-->
-      <section class="features-section section">
+      <!-- <section class="features-section section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="features-section__list list">
@@ -161,9 +180,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Skill-->
-      <section class="skill-section section">
+      <!-- <section class="skill-section section">
         <div class="container">
           <h2 class="skill-section__title">Чим ми займаємося</h2>
           <ul class="skill-section__list list">
@@ -196,9 +215,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!---------------Our team----------------->
-      <section class="team-section section">
+      <!-- <section class="team-section section">
         <div class="container">
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-section__gallery list">
@@ -414,9 +433,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Regular customers -->
-      <section class="clients-section section">
+      <!-- <section class="clients-section section">
         <div class="container">
           <h2 class="clients-section__title">Постійні клієнти</h2>
           <ul class="clients-section__list list">
@@ -482,19 +501,19 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-----------------FOOTER---------------->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div class="footer__box">
-          <!-- Link to the main page -->
+          
           <a class="logo footer__logo link" href="./index.html" lang="en"
             >Web<span class="logo__studio_white">Studio</span></a
           >
           <address class="footer__contacts">
             <ul class="footer__list list">
-              <!-- Link to address  -->
+              
               <li class="address footer__item link">
                 <a
                   class="address__link link"
@@ -504,7 +523,7 @@
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <!-- Link to e-mail address -->
+              
               <li class="email footer__item link">
                 <a
                   class="email__link footer__link link"
@@ -512,7 +531,7 @@
                   >info@devstudio.com</a
                 >
               </li>
-              <!-- Link to phone number  -->
+              
               <li class="phone footer__item link">
                 <a class="phone_link footer__link link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
@@ -521,7 +540,7 @@
             </ul>
           </address>
         </div>
-        <!-----------Subscribe-------------->
+        
         <div class="subscribe footer__box">
           <p class="subscribe__title">Приєднуйтесь</p>
           <ul class="subscribe__social list">
@@ -567,7 +586,7 @@
             </li>
           </ul>
         </div>
-        <!-- Subscribe FORM -->
+        
         <div class="subscribe-form">
           <p class="subscribe-form__title">Підпишіться на розсилку</p>
           <form class="subscribe-form__field">
@@ -590,10 +609,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Backdrop -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal__box">
         <button type="button" class="modal-btn__close button" data-modal-close>
           <svg class="modal-close__icon">
@@ -653,10 +672,10 @@
               name="user_message"
               placeholder="Введіть текст"
               class="modal-form__message"></textarea>
-          </label>
+          </label> -->
 
-          <!------------------ checkbox --------------------->
-          <label class="checkbox">
+    <!------------------ checkbox --------------------->
+    <!-- <label class="checkbox">
             <input
               type="checkbox"
               class="checkbox__check visually-hidden"
@@ -672,10 +691,7 @@
               href=""
               >Умови договору</a
             >
-            <!-- <a class="modal-form-check-link-policy" href=""
-              >Погоджуюся з розсилкою та приймаю
-              <span class="policy-link-blue">Умови договору</span>
-            </a> -->
+            
           </label>
           <button type="submit" class="modal-btn__submit button">
             Відправити
@@ -683,6 +699,8 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    
+    <script src="./js/modal.js"></script>-->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
