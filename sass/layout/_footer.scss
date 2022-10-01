@@ -162,3 +162,17 @@
     fill: var(--background-color-icon-inert);
   }
 }
+
+
+// display: flex;
+//     align-items: baseline;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     row-gap: 60px;
+
+
+// В мобілці input width 100% , в таблетці
+//  та десктопі фіксований згідно розмірів макету.
+//  Можна зробити до 479px width 100% , а далі
+//   фіксовано. Але Я робив 100% до 767px. 
+//   І після 480px він в мене не розтягується

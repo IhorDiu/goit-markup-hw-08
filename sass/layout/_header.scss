@@ -35,8 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: yellow;
-}
+  }
 
 .logo__header {
   font-size: 24px;
@@ -68,7 +67,7 @@
 
   .menu {
     display: flex;
-    gap: 50px;
+    column-gap: 52px;
     // align-items: center;
     // justify-content: space-between;
     // min-width: 288px;
