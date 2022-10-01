@@ -1,45 +1,127 @@
+@media screen and (max-width: 480px) {
+  .hero-section {
+    max-width: 480px;
+    min-height: 400px;
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Mobile/img-header1-mobile@2x.jpg);
+  }
+
+  .hero-section__name {
+    font-size: calc(26 / 480 * 100vw);
+    line-height: 1.62;
+  }
+
+  .hero-section__button {
+    padding: 10px 24px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero-section {
+    max-width: 480px;
+    min-height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Mobile/img-header1-mobile@2x.jpg);
+    padding-top: 118px;
+    padding-right: 118px;
+  }
+
+  .hero-section__name {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  .hero-section__button {
+    padding: 10px 24px;
+  }
+}
+
 .hero-section {
-  max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/Main/bg_hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   background-color: var(--background-color-hero);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero-section__name {
-  margin-top: 0;
-  margin-bottom: 30px;
   display: block;
-  width: 696px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-
-  font-family: var(--primary-font);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-
+  margin-bottom: 30px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
+  font-family: var(--primary-font);
+  font-weight: 900;
   color: var(--primary-text-color-theme-dark);
 }
 
 .hero-section__button {
   display: inline-block;
-  min-width: 216px;
-  padding: 10px 32px;
   margin: auto;
+}
+
+//======================= Table ==================================
+@media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+    min-height: 400px;
+    padding-top: 118px;
+    padding-right: 118px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Table/img-header1-table@2x.jpg);
+  }
+  .hero-section__name {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  .hero-section__button {
+    padding: 10px 24px;
+  }
+}
+
+//============================= DESKTOP===============
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    max-width: 1600px;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Desktop/img-header1-desktop@2x.jpg);
+
+    
+  }
+
+  .hero-section__name {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
+  .hero-section__button {
+    width: 216px;
+    padding: 10px 30px;
+    align-items: center;
+    text-align: center;
+  }
 }

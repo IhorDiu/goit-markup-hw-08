@@ -24,11 +24,7 @@
     transition: transform var(--transition-dur-and-func);
   }
 
-  // display: flex;
-  // flex-direction: column;
-  // height: 100vh;
-
-  .mobile-menu.is-open {
+   .mobile-menu.is-open {
     transform: translateX(0);
   }
 

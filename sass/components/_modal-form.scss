@@ -1,31 +1,45 @@
+@media screen and (max-width: 480px) {
+  .modal-form__header {
+    font-size: calc(20 / 480 * 100vw);
+    line-height: 1.5;
+  }
+
+  .modal-form__title {
+    font-size: calc(12 / 480 * 100vw);
+  }
+  .modal-form__message {
+    &::placeholder {
+      font-size: calc(14 / 480 * 100vw);
+      line-height: 1.14;
+    }
+  }
+
+  .checkbox {
+    font-size: calc(8 / 480 * 100vw);
+    line-height: 1.17;
+  }
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
 }
-
-.modal-form__header {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  margin-bottom: 12px;
-
-  color: var(--secondary-text-color-theme-light);
-}
-
 .modal-form__field {
   margin-bottom: 10px;
 }
 
+.modal-form__header {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--secondary-text-color-theme-light);
+}
+
 .modal-form__title {
   display: block;
-  font-size: 12px;
   line-height: 1.17;
-
   letter-spacing: 0.01em;
-
   margin-bottom: 4px;
-
   color: var(--primary-text-color-theme-light);
 }
 
@@ -77,10 +91,7 @@
   transition: border-color var(--transition-dur-and-func);
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
     letter-spacing: 0.01em;
-
     color: rgba(117, 117, 117, 0.5);
   }
 
@@ -90,15 +101,10 @@
   }
 }
 
-// <!------------------ checkbox --------------------->
 .checkbox {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-
-  font-size: 14px;
-  line-height: 1.71;
-
   color: var(--primary-text-color-theme-light);
 }
 
@@ -106,10 +112,7 @@
   @include flex-properties();
   width: 16px;
   height: 15px;
-  // align-items: center;
-  // justify-content: center;
   margin-right: 8px;
-
   cursor: pointer;
   border-radius: 2px;
   border: 2px solid var(--background-color-header-section);
@@ -140,5 +143,71 @@
   &:focus,
   &:hover {
     outline-color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal-form__header {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .modal-form__title {
+    font-size: 12px;
+  }
+  .modal-form__message {
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+    }
+  }
+  .checkbox {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+//======================= Table ==================================
+@media screen and (min-width: 768px) {
+  .modal-form__header {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .modal-form__title {
+    font-size: 12px;
+  }
+  .modal-form__message {
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+    }
+  }
+  .checkbox {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+//============================= DESKTOP===============
+@media screen and (min-width: 1200px) {
+  .modal-form__header {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+
+  .modal-form__title {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  .modal-form__message {
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+  }
+
+  .checkbox {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }

@@ -1,10 +1,23 @@
+@media screen and (max-width: 480px) {
+  .modal__box {
+    margin-top: 5px;
+    width: 85vw;
+    height: 80vh;
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal__box {
+    width: 460px;
+    height: 609px;
+  }
+}
 
 .modal__box {
-  @include abs-position (50%, auto,  auto,  50%);
+  @include abs-position(50%, auto, auto, 50%);
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
   padding: 40px;
 
   background-color: #ffffff;
@@ -13,3 +26,18 @@
   border-radius: 4px;
 }
 
+//======================= Table ==================================
+@media screen and (min-width: 768px) {
+  .modal__box {
+    width: 460px;
+    height: 609px;
+  }
+}
+
+//============================= DESKTOP===============
+@media screen and (min-width: 1200px) {
+  .modal__box {
+    width: 528px;
+    height: 581px;
+  }
+}
