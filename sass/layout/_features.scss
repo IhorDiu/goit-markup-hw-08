@@ -1,41 +1,128 @@
+@media screen and (max-width: 480px) {
+  .features-section__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .features-section__box {
+    width: calc(450 / 480 * 100vw);
+    margin-bottom: 30px;
+  }
+
+  .features-section__title {
+    font-weight: 700;
+    font-size: calc(14 / 480 * 100vw);
+  }
+
+  .features-section__content {
+    font-size: calc(14 / 480 * 100vw);
+    // margin-bottom: 30px;
+  }
+}
 
 .features-section {
   padding-bottom: 0;
 }
 
-.features-section__list {
-  display: flex;
-  justify-content: center;
-  column-gap: 30px;
-}
-
 .features-section__box {
   @include flex-properties();
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  width: 270px;
-  height: 120px;
   background-color: var(--background-color-icon);
   border-radius: 4px;
   margin-bottom: 30px;
+  height: 120px;
 }
 
 .features-section__title {
   font-weight: 700;
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .features-section__content {
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 1.71;
 }
-
 
 .features-section__icon {
   width: 70px;
   height: 70px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .features-section__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .features-section__box {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+
+  .features-section__title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .features-section__content {
+    font-size: 14px;
+  }
+}
+
+//======================= Table ==================================
+@media screen and (min-width: 768px) {
+  .features-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .features-section__box {
+    width: 354px;
+    margin-bottom: 30px;
+  }
+
+  .features-section__title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .features-section__content {
+    font-size: 14px;
+    width: 354px;
+  }
+}
+
+//============================= DESKTOP===============
+@media screen and (min-width: 1200px) {
+  .features-section__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .features-section__box {
+    width: 270px;
+  }
+
+  .features-section__title {
+    line-height: 1.14;
+  }
+
+  .features-section__content {
+    font-size: 14px;
+    line-height: 1.71;
+    width: 270px;
+  }
+
+  .features-section__list {
+    column-gap: 30px;
+  }
 }

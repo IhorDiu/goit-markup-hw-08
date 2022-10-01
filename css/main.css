@@ -83,11 +83,18 @@ h3 {
   margin: 0;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -1017,6 +1024,12 @@ h3 {
   .hero-section {
     max-width: 480px;
     min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Mobile/img-header1-mobile@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Mobile/img-header1-mobile@2x.jpg);
   }
@@ -1115,20 +1128,34 @@ h3 {
     text-align: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .features-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+  .features-section__box {
+    width: 93.75vw;
+    margin-bottom: 30px;
+  }
+  .features-section__title {
+    font-weight: 700;
+    font-size: 2.9166666667vw;
+  }
+  .features-section__content {
+    font-size: 2.9166666667vw;
+  }
+}
 .features-section {
   padding-bottom: 0;
-}
-
-.features-section__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
 }
 
 .features-section__box {
@@ -1141,23 +1168,20 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
-  height: 120px;
   background-color: var(--background-color-icon);
   border-radius: 4px;
   margin-bottom: 30px;
+  height: 120px;
 }
 
 .features-section__title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .features-section__content {
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -1166,6 +1190,86 @@ h3 {
   height: 70px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .features-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+  .features-section__box {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+  .features-section__title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .features-section__content {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .features-section__box {
+    width: 354px;
+    margin-bottom: 30px;
+  }
+  .features-section__title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .features-section__content {
+    font-size: 14px;
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features-section__box {
+    width: 270px;
+  }
+  .features-section__title {
+    line-height: 1.14;
+  }
+  .features-section__content {
+    font-size: 14px;
+    line-height: 1.71;
+    width: 270px;
+  }
+  .features-section__list {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
 .skill-section__title {
   font-weight: 700;
   font-size: 36px;
