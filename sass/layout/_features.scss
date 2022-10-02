@@ -22,10 +22,6 @@
   }
 }
 
-.features-section {
-  padding-bottom: 0;
-}
-
 .features-section__box {
   @include flex-properties();
   background-color: var(--background-color-icon);
@@ -103,6 +99,10 @@
 
 //============================= DESKTOP===============
 @media screen and (min-width: 1200px) {
+  .features-section {
+    padding-bottom: 0;
+  }
+
   .features-section__list {
     display: flex;
     justify-content: center;

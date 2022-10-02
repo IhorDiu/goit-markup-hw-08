@@ -1,19 +1,77 @@
+@media screen and (max-width: 480px) {
+  .team-section__title {
+    font-size: calc(28 / 480 * 100vw);
+    line-height: 1.18;
+  }
+
+  .team-section__gallery {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .team-section__box {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+  .team-section__name {
+    font-size: calc (16 / 480 * 100vw);
+  }
+
+  .team-section__position {
+    font-size: calc (16 / 480 * 100vw);
+  }
+
+  .team-section__picture {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team-section__title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  .team-section__gallery {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .team-section__box {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+  .team-section__name {
+    font-size: 16px;
+  }
+
+  .team-section__position {
+    font-size: 16px;
+  }
+
+  .team-section__picture {
+    max-width: 450px;
+    min-height: 460px;
+  }
+}
+
 .team-section {
   background-color: var(--background-color-our-team);
 }
 
 .team-section__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
 }
 
 .team-section__gallery {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
 }
 
 .team-section__card {
@@ -24,10 +82,6 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-section__box {
-  padding: 30px;
-}
-
 .team-section__name {
   font-weight: 500;
   font-size: 16px;
@@ -35,8 +89,8 @@
   text-align: center;
   margin-bottom: 10px;
 }
+
 .team-section__position {
-  font-size: 16px;
   line-height: 1.19;
   text-align: center;
   margin-bottom: 16px;
@@ -74,5 +128,76 @@
   .social-list__link:hover &,
   .social-list__link:focus & {
     fill: var(--background-color-icon);
+  }
+}
+
+//======================= Table ==================================
+@media screen and (min-width: 768px) {
+  .team-section__title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  .team-section__gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .team-section__box {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+  .team-section__name {
+    font-size: 16px;
+  }
+
+  .team-section__position {
+    font-size: 16px;
+  }
+
+  .team-section__picture {
+    max-width: 354px;
+    min-height: 374px;
+  }
+}
+
+//============================= DESKTOP===============
+@media screen and (min-width: 1200px) {
+  .team-section__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+
+  .team-section__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .team-section__box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .team-section__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .team-section__position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+   .team-section__picture {
+    max-width: 270px;
+    min-height: 260px;
   }
 }

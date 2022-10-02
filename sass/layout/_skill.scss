@@ -1,4 +1,16 @@
-.skill-section__title {
+
+  .skill-section {
+    display: none;
+  } 
+
+//============================= DESKTOP===============
+@media screen and (min-width: 1200px) {
+
+  .skill-section {
+    display: flex;
+  }
+  
+  .skill-section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -17,7 +29,7 @@
 }
 
 .skill-section__overlay {
-  @include abs-position ( auto,  auto,  0px,  0px);
+  @include abs-position(auto, auto, 0px, 0px);
   width: 100%;
   height: 70px;
   padding-top: 27px;
@@ -31,4 +43,5 @@
   text-transform: uppercase;
 }
 
+}
 
