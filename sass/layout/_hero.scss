@@ -4,11 +4,19 @@
     min-height: 400px;
     display: flex;
     align-items: center;
-        background-image: linear-gradient(
+    background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Mobile/img-header1-mobile@2x.jpg);
+      url(../images/Mobile/img-header1-mobile@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(../images/Mobile/img-header1-mobile@2x.jpg);
+    }
   }
 
   .hero-section__name {
@@ -21,7 +29,7 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .hero-section {
     max-width: 480px;
     min-height: 400px;
@@ -29,9 +37,17 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Mobile/img-header1-mobile@2x.jpg);
+      url(../images/Mobile/img-header1-mobile@1x.jpg);
     padding-top: 118px;
     padding-bottom: 118px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(../images/Mobile/img-header1-mobile@2x.jpg);
+    }
   }
 
   .hero-section__name {
@@ -84,7 +100,15 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Table/img-header1-table@2x.jpg);
+      url(../images/Table/img-header1-table@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(../images/Table/img-header1-table@2x.jpg);
+    }
   }
   .hero-section__name {
     width: 360px;
@@ -109,10 +133,16 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Desktop/img-header1-desktop@2x.jpg);
-
-    
+      url(../images/Desktop/img-header1-desktop@1x.jpg);
   }
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url(../images/Desktop/img-header1-desktop@2x.jpg);
+  }
+}
 
   .hero-section__name {
     width: 696px;

@@ -14,6 +14,7 @@
   .features-section__title {
     font-weight: 700;
     font-size: calc(14 / 480 * 100vw);
+    text-align: center;
   }
 
   .features-section__content {
@@ -48,7 +49,7 @@
   height: 70px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .features-section__list {
     display: flex;
     align-items: center;
@@ -64,6 +65,7 @@
   .features-section__title {
     font-weight: 700;
     font-size: 14px;
+    text-align: center;    
   }
 
   .features-section__content {
@@ -115,6 +117,7 @@
 
   .features-section__title {
     line-height: 1.14;
+    
   }
 
   .features-section__content {
