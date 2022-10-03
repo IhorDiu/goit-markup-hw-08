@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .modal__box {
     margin-top: 5px;
     width: 85vw;
@@ -7,7 +7,7 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .modal__box {
     width: 460px;
     height: 609px;

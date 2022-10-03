@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .features-section__list {
     display: flex;
     align-items: center;
@@ -49,7 +49,7 @@
   height: 70px;
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .features-section__list {
     display: flex;
     align-items: center;

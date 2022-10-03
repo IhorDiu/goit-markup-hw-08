@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .modal-form__header {
     font-size: calc(20 / 480 * 100vw);
     line-height: 1.5;
@@ -146,7 +146,7 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .modal-form__header {
     font-size: 20px;
     line-height: 1.5;

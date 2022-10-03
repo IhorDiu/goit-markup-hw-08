@@ -32,12 +32,14 @@
 
           <ul class="menu list">
             <li class="menu__item">
-              <a class="menu__link link" href="./index.html"
-                >Студія</a
-              >
+              <a class="menu__link link" href="./index.html">Студія</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link link menu__link_current" href="./portfolio.html">Портфоліо</a>
+              <a
+                class="menu__link link menu__link_current"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="#">Контакти</a>
@@ -92,14 +94,12 @@
           </button>
           <ul class="mobile-menu__list list">
             <li>
-              <a
-                class="mobile-menu__link link"
-                href="./index.html"
-                >Студія</a
-              >
+              <a class="mobile-menu__link link" href="./index.html">Студія</a>
             </li>
             <li>
-              <a class="mobile-menu__link link mobile-menu__link_current" href="./portfolio.html"
+              <a
+                class="mobile-menu__link link mobile-menu__link_current"
+                href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
@@ -155,19 +155,29 @@
           <!-- Portfolio filter -->
           <ul class="btn-filter__list list">
             <li class="btn-filter__item">
-              <button class="btn-filter__title button" type="button">Усі</button>
+              <button class="btn-filter__title button" type="button">
+                Усі
+              </button>
             </li>
             <li class="btn-filter">
-              <button class="btn-filter__title button" type="button">Веб-сайти</button>
+              <button class="btn-filter__title button" type="button">
+                Веб-сайти
+              </button>
             </li>
             <li class="btn-filter">
-              <button class="btn-filter__title button" type="button">Додатки</button>
+              <button class="btn-filter__title button" type="button">
+                Додатки
+              </button>
             </li>
             <li class="btn-filter">
-              <button class="btn-filter__title button" type="button">Дизайн</button>
+              <button class="btn-filter__title button" type="button">
+                Дизайн
+              </button>
             </li>
             <li class="btn-filter">
-              <button class="btn-filter__title button" type="button">Маркетинг</button>
+              <button class="btn-filter__title button" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!-- PORTFOLIO SKILL -->
@@ -175,29 +185,113 @@
             <li class="project__item">
               <a class="project__link link" href="#">
                 <div class="project__wrapper">
-                  <img
-                    src="./images/Portfolio/portfolio-001.jpg"
-                    alt="Приклад зробленого веб-сайту"
-                    width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project1-desktop@1x.webp 1x,
+                        ./images/Desktop/img-project1-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project1-desktop@1x.jpg 1x,
+                        ./images/Desktop/img-project1-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project1-table@1x.webp 1x,
+                        ./images/Table/img-project1-table@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project1-table@1x.jpg 1x,
+                        ./images/Table/img-project1-table@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project1-mobile@1x.webp 1x,
+                        ./images/Mobile/img-project1-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project1-mobile@1x.jpg 1x,
+                        ./images/Mobile/img-project1-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+
+                    <img class="project__picture"
+                      src="./images/Desktop/img-project1-desktop@1x.jpg"
+                      alt="Приклад зробленого веб-сайту" />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="project__container">
+                <div class="project__container container__grow">
                   <h2 class="project__title">Технокряк</h2>
-                  <p class="project__skills ">Веб-сайт</p>
+                  <p class="project__skills">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="project__item">
               <a class="project__link link" href="#">
                 <div class="project__wrapper">
-                  <img
-                    src="./images/Portfolio/portfolio-002.jpg"
-                    alt="Два баскетболіста борються за мяч"
-                    width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project2-desktop@1x.webp 1x,
+                        ./images/Desktop/img-project2-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project2-desktop@1x.jpg 1x,
+                        ./images/Desktop/img-project2-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project2-table@1x.webp 1x,
+                        ./images/Table/img-project2-table@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project2-table@1x.jpg 1x,
+                        ./images/Table/img-project2-table@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project2-mobile@1x.webp 1x,
+                        ./images/Mobile/img-project2-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project2-mobile@1x.jpg 1x,
+                        ./images/Mobile/img-project2-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                  <img class="project__picture"
+                    src="./images/Desktop/img-project2-desktop@1x.jpg"
+                    alt="Два баскетболіста борються за мяч" />
+                  </picture>
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -208,17 +302,58 @@
                   <h2 class="project__title">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="project__skills ">Дизайн</p>
+                  <p class="project__skills">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="project__item">
               <a class="project__link link" href="#">
                 <div class="project__wrapper">
-                  <img
-                    src="./images/Portfolio/portfolio-003.jpg"
-                    alt="Назва ресторану Сіфуд на фоні тунця"
-                    width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project3-desktop@1x.webp 1x,
+                        ./images/Desktop/img-project3-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project3-desktop@1x.jpg 1x,
+                        ./images/Desktop/img-project3-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project3-table@1x.webp 1x,
+                        ./images/Table/img-project3-table@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project3-table@1x.jpg 1x,
+                        ./images/Table/img-project3-table@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project3-mobile@1x.webp 1x,
+                        ./images/Mobile/img-project3-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project3-mobile@1x.jpg 1x,
+                        ./images/Mobile/img-project3-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                  <img class="project__picture"
+                    src="./images/Desktop/img-project3-desktop@1x.jpg"
+                    alt="Назва ресторану Сіфуд на фоні тунця" />
+                  </picture>
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -229,17 +364,58 @@
                   <h2 class="project__title">
                     Ресторан <span lang="en">Seafood</span>
                   </h2>
-                  <p class="project__skills ">Додаток</p>
+                  <p class="project__skills">Додаток</p>
                 </div>
               </a>
             </li>
             <li class="project__item">
               <a class="project__link link" href="#">
                 <div class="project__wrapper">
-                  <img
-                    src="./images/Portfolio/portfolio-004.jpg"
-                    alt="Накладні навушники"
-                    width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project4-desktop@1x.webp 1x,
+                        ./images/Desktop/img-project4-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project4-desktop@1x.jpg 1x,
+                        ./images/Desktop/img-project4-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project4-table@1x.webp 1x,
+                        ./images/Table/img-project4-table@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project4-table@1x.jpg 1x,
+                        ./images/Table/img-project4-table@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project4-mobile@1x.webp 1x,
+                        ./images/Mobile/img-project4-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project4-mobile@1x.jpg 1x,
+                        ./images/Mobile/img-project4-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                  <img class="project__picture"
+                    src="./images/Desktop/img-project4-desktop@1x.jpg"
+                    alt="Накладні навушники" />
+                  </picture>
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -250,17 +426,58 @@
                   <h2 class="project__title">
                     Проект <span lang="en">Prime</span>
                   </h2>
-                  <p class="project__skills ">Маркетинг</p>
+                  <p class="project__skills">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="project__item">
               <a class="project__link link" href="#">
                 <div class="project__wrapper">
-                  <img
-                    src="./images/Portfolio/portfolio-005.jpg"
-                    alt="Дві коробки білого та жовтого кольорів"
-                    width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project5-desktop@1x.webp 1x,
+                        ./images/Desktop/img-project5-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project5-desktop@1x.jpg 1x,
+                        ./images/Desktop/img-project5-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project5-table@1x.webp 1x,
+                        ./images/Table/img-project5-table@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project5-table@1x.jpg 1x,
+                        ./images/Table/img-project5-table@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project5-mobile@1x.webp 1x,
+                        ./images/Mobile/img-project5-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project5-mobile@1x.jpg 1x,
+                        ./images/Mobile/img-project5-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                  <img class="project__picture"
+                    src="./images/Desktop/img-project5-desktop@1x.jpg"
+                    alt="Дві коробки білого та жовтого кольорів" />
+                  </picture>
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -271,17 +488,58 @@
                   <h2 class="project__title">
                     Проект <span lang="en">Boxed</span>
                   </h2>
-                  <p class="project__skills ">Додаток</p>
+                  <p class="project__skills">Додаток</p>
                 </div>
               </a>
             </li>
             <li class="project__item">
               <a class="project__link link" href="#">
                 <div class="project__wrapper">
-                  <img
-                    src="./images/Portfolio/portfolio-006.jpg"
-                    alt="Монітор Епл зі зображенням веб-сайту"
-                    width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project6-desktop@1x.webp 1x,
+                        ./images/Desktop/img-project6-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project6-desktop@1x.jpg 1x,
+                        ./images/Desktop/img-project6-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project6-table@1x.webp 1x,
+                        ./images/Table/img-project6-table@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project6-table@1x.jpg 1x,
+                        ./images/Table/img-project6-table@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project6-mobile@1x.webp 1x,
+                        ./images/Mobile/img-project6-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project6-mobile@1x.jpg 1x,
+                        ./images/Mobile/img-project6-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                  <img class="project__picture"
+                    src="./images/Desktop/img-project6-desktop@1x.jpg"
+                    alt="Монітор Епл зі зображенням веб-сайту" />
+                  </picture>
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -292,17 +550,58 @@
                   <h2 class="project__title" lang="en">
                     Inspiration has no Borders
                   </h2>
-                  <p class="project__skills ">Веб-сайт</p>
+                  <p class="project__skills">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="project__item">
               <a class="project__link link" href="#">
                 <div class="project__wrapper">
-                  <img
-                    src="./images/Portfolio/portfolio-007.jpg"
-                    alt="Розкрита книга"
-                    width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project7-desktop@1x.webp 1x,
+                        ./images/Desktop/img-project7-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project7-desktop@1x.jpg 1x,
+                        ./images/Desktop/img-project7-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project7-table@1x.webp 1x,
+                        ./images/Table/img-project7-table@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project7-table@1x.jpg 1x,
+                        ./images/Table/img-project7-table@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project7-mobile@1x.webp 1x,
+                        ./images/Mobile/img-project7-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project7-mobile@1x.jpg 1x,
+                        ./images/Mobile/img-project7-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                  <img class="project__picture"
+                    src="./images/Desktop/img-project7-desktop@1x.jpg"
+                    alt="Розкрита книга" />
+                  </picture>
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -313,17 +612,58 @@
                   <h2 class="project__title">
                     Видання <span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="project__skills ">Дизайн</p>
+                  <p class="project__skills">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="project__item">
               <a class="project__link link" href="#">
                 <div class="project__wrapper">
-                  <img
-                    src="./images/Portfolio/portfolio-008.jpg"
-                    alt="Бірка з написом Лабел Таг"
-                    width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project8-desktop@1x.webp 1x,
+                        ./images/Desktop/img-project8-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project8-desktop@1x.jpg 1x,
+                        ./images/Desktop/img-project8-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project8-table@1x.webp 1x,
+                        ./images/Table/img-project8-table@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project8-table@1x.jpg 1x,
+                        ./images/Table/img-project8-table@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project8-mobile@1x.webp 1x,
+                        ./images/Mobile/img-project8-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project8-mobile@1x.jpg 1x,
+                        ./images/Mobile/img-project8-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                  <img class="project__picture"
+                    src="./images/Desktop/img-project8-desktop@1x.jpg"
+                    alt="Бірка з написом Лабел Таг" />
+                 </picture>
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -334,17 +674,58 @@
                   <h2 class="project__title">
                     Проект <span lang="en">LAB</span>
                   </h2>
-                  <p class="project__skills ">Маркетинг</p>
+                  <p class="project__skills">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="project__item">
               <a class="project__link link" href="#">
                 <div class="project__wrapper">
-                  <img
-                    src="./images/Portfolio/portfolio-009.jpg"
-                    alt="Ноутбук, на якому завантажений додаток"
-                    width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project9-desktop@1x.webp 1x,
+                        ./images/Desktop/img-project9-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Desktop/img-project9-desktop@1x.jpg 1x,
+                        ./images/Desktop/img-project9-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project9-table@1x.webp 1x,
+                        ./images/Table/img-project9-table@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Table/img-project9-table@1x.jpg 1x,
+                        ./images/Table/img-project9-table@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project9-mobile@1x.webp 1x,
+                        ./images/Mobile/img-project9-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/Mobile/img-project9-mobile@1x.jpg 1x,
+                        ./images/Mobile/img-project9-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                  <img class="project__picture"
+                    src="./images/Desktop/img-project9-desktop@1x.jpg"
+                    alt="Ноутбук, на якому завантажений додаток" />
+                  </picture>
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -352,10 +733,8 @@
                   </p>
                 </div>
                 <div class="project__container">
-                  <h2 class="project__title" lang="en">
-                    Growing Business
-                  </h2>
-                  <p class="project__skills ">Додаток</p>
+                  <h2 class="project__title" lang="en">Growing Business</h2>
+                  <p class="project__skills">Додаток</p>
                 </div>
               </a>
             </li>
@@ -364,16 +743,14 @@
       </section>
     </main>
     <!--FOOTER-->
-   <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__box">
-          
           <a class="logo footer__logo link" href="./index.html" lang="en"
             >Web<span class="logo__studio_white">Studio</span></a
           >
           <address class="footer__contacts">
             <ul class="footer__list list">
-              
               <li class="address footer__item link">
                 <a
                   class="address__link link"
@@ -383,7 +760,7 @@
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              
+
               <li class="email footer__item link">
                 <a
                   class="email__link footer__link link"
@@ -391,7 +768,7 @@
                   >info@devstudio.com</a
                 >
               </li>
-              
+
               <li class="phone footer__item link">
                 <a class="phone_link footer__link link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
@@ -399,7 +776,7 @@
               </li>
             </ul>
           </address>
-        </div>        
+        </div>
         <div class="subscribe footer__box">
           <p class="subscribe__title">Приєднуйтесь</p>
           <ul class="subscribe__social list">
@@ -444,7 +821,7 @@
               </a>
             </li>
           </ul>
-        </div>        
+        </div>
         <div class="subscribe-form">
           <p class="subscribe-form__title">Підпишіться на розсилку</p>
           <form class="subscribe-form__field">
