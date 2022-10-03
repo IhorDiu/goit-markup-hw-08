@@ -2,7 +2,7 @@
   .btn-filter__list {
     margin-bottom: 40px;
     display: flex;
-    width: calc=(328 / 450 * 100vw);
+    max-width: 328px
   }
 
   .btn-filter__title {

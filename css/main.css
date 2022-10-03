@@ -1677,7 +1677,7 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: calc328px;
+    max-width: 328px;
   }
   .btn-filter__title {
     font-size: 3.3333333333vw;
